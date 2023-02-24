@@ -1,0 +1,20 @@
+<ng-container [ngSwitch]="config.type">
+  <h1 
+    *ngSwitchCase="'title'" 
+    class="fs-1"
+    [ngClass]="'text-' + config.color">
+    {{ config.text }}
+  </h1>
+  <h2 
+    *ngSwitchCase="'subtitle'" 
+    class="fs-3"
+    [ngClass]="'text-' + config.color">
+    {{ config.text }}
+  </h2>
+  <p 
+    *ngSwitchCase="'paragraph'" 
+    class="mb-2"
+    [ngClass]="'text-' + config.color">
+    {{ config.text }}
+  </p>
+</ng-container>

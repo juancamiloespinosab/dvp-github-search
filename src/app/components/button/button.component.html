@@ -1,0 +1,7 @@
+<button 
+    class="btn app-button d-flex gap-2" 
+    [ngClass]="'btn-' + config.buttonColor" 
+    type="submit">
+    {{ config.buttonText }}
+    <ng-content></ng-content>
+</button>

@@ -3,7 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  githubUrl: 'https://github.com/',
+  githubSearchApi: {
+    baseUrl: "https://api.github.com/search/",
+    paths: {
+      users: "users"
+    },
+    pagination: {
+      per_page: 100,
+      page: 1
+    }
+  }
 };
 
 /*

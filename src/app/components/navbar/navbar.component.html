@@ -1,0 +1,24 @@
+<nav class="navbar bg-secondary bg-light p-sm-4 p-3">
+  <div
+    class="container-fluid flex-column justify-content-center"
+  >
+    <app-text
+      [config]="{
+        type: 'title',
+        text: 'DVP GitHub Search',
+        color: 'primary'
+      }"
+    ></app-text>
+    <div class="d-flex justify-content-center gap-2 col-lg-4 col-md-6 col-12" role="search">
+      <app-text-input class="w-100" [config]="{ placeholder: 'Buscar usuario' }"></app-text-input>
+      <app-icon-button
+        [config]="{
+          buttonText: '',
+          buttonColor: 'primary',
+          iconName: 'search',
+          iconColor: 'white'
+        }"
+      ></app-icon-button>
+    </div>
+  </div>
+</nav>
